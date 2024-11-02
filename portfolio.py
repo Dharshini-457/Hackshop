@@ -42,7 +42,7 @@ if selected=="PROJECTS":
         st.subheader("***PORTFOLIO***"," ")
         st.subheader("***GUESSING GAME***")
         st.subheader("***PERSONAL DIARY***")
-        st.write("***Are some of my works in addition some web application***")
+        st.write("***Are some of my works in addition some web applications also....***")
 if selected=="EDUCATION":
     st.subheader("***EDUCATION</>***")
     _dict={" ACADEMIC DETAILS":["10TH STANDARD[STATE BOARD SCHOOL]","12TH STANDARD[STATE BOARD SCHOOL]"],
