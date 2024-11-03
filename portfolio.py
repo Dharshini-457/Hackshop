@@ -33,7 +33,9 @@ if btn:
 if selected=="ABOUT ME":
     st.header("ABOUT ME!!")
     st.header("***I AM AN CREATIVE STUDENT DEVELOPER & DESIGNER***")
-    st.subheader( "***With 1 years of learning experience in KGISL institution. I'm  passionate about working in data science and machine learning.I'm eager to explore opportunities in software developments and I'd love to contribute to projects involving game development***")
+    st.subheader( "***With 1 years of learning experience in KGISL institution.***")
+    st.subheader("***I'm  passionate about working in data science and machine learning.***")
+    st.subheader("***I'm eager to explore opportunities in software developments and I'd love to contribute to projects involving game development.***")
     
 if selected=="PROJECTS":
     st.header("***MY CREATIONS</>***")
