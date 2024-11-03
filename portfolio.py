@@ -64,3 +64,4 @@ if selected=="WHAT I KNOW!":
         st.write("I WILL DO BETTER NEXT TIME!! THANKS FOR YOUR ENCOURAGMENT")
     else:
         pass
+    

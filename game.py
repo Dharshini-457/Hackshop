@@ -14,30 +14,27 @@ def game():
 def loss():
     st.write("YOUR GUESS IS WRONG!!")
     st.write("TRY LOWER NUMBER!!")
-    btn=st.button("***RESTART!!***")
-    if btn:
-        game()
+    game()
     return
 def lower():
     st.write("YOUR GUESS IS WRONG!!")
     st.write("TRY HIGHER NUMBER!! ")
-    btn=st.button("***RESTART***")
-    if btn:
-        game()
+    game()
 
 game()   
 btn=st.button("***START***")
 number = 66
 attempts=0
 if btn:
-    guess = st.number_input("ENTER YOUR GUESS:",min_value=1,max_value=100)
+    guess = st.number_input("ENTER YOUR GUESS:",min_value=0,max_value=100)
     if guess < number:
         lower()
     elif guess > number:
         loss()
+    elif  guess == number:
+        st.write("CONGRATULATION! YOU WON THE GAME !!")
     else:
-        st.write(f"CONGRATULATION! YOU WON THE GAME !!")
-        breakpoint
+        st.write("INVALID NUMBER!!")
     
 
 
