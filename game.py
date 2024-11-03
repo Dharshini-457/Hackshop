@@ -13,27 +13,32 @@ def game():
     return
 def loss():
     st.write("YOUR GUESS IS WRONG!!")
+    st.write("TRY LOWER NUMBER!!")
     btn=st.button("***RESTART!!***")
     if btn:
         game()
     return
+def lower():
+    st.write("YOUR GUESS IS WRONG!!")
+    st.write("TRY HIGHER NUMBER!! ")
+    btn=st.button("***RESTART***")
+    if btn:
+        game()
 
 game()   
 btn=st.button("***START***")
 number = 66
 attempts=0
 if btn:
-    st.number_input("ENTER YOUR GUESS:",key="guess")
-    if st.session_state.guess < number:
+    guess = st.number_input("ENTER YOUR GUESS:",min_value=1,max_value=100)
+    if guess < number:
+        lower()
+    elif guess > number:
         loss()
-        st.write("TRY A HIGHER NUMBER!!!")
-    elif st.session_state.guess > number:
-        loss()
-        st.write("TRY A LOWER NUMBER!!")
     else:
-        st.write(f"CONGRATULATION! YOU WON THE GAME WITH{attempts} attempts!!")
+        st.write(f"CONGRATULATION! YOU WON THE GAME !!")
         breakpoint
-    attempts+=1
+    
 
 
     
