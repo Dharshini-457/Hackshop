@@ -1,7 +1,7 @@
 import streamlit as st
 from PIL import Image
-st.markdown("<style>body{background-color:#333;}</style>",unsafe_allow_html=True)
-image=Image.open("file:///C:/Users/dhars/Downloads/KRS_7411.webp")
+ist.markdown("<style>body{background-color:#333;}</style>",unsafe_allow_html=True)
+mage=Image.open("file:///C:/Users/dhars/Downloads/KRS_7411.webp")
 st.image(image,caption='Murugar',)
 st.title("My Portfolio!!")
 

@@ -22,16 +22,17 @@ def game():
     if st.button("CHECK"):
         if result!=0:
             st.success(f"IT IS RIGHT!! The number was{num_to_guess}")
+            st.balloons()
         else:
             st.error(f"IT IS WRONG!! The number was {num_to_guess}")
-            if st.button("RESTART!!"):
-                game()
+            game()
 
 def rule():
-    st.write("WELCOME TO OUR GAME !! Before we start the game the ruele of the game is must be followed ")
+    st.write("WELCOME TO OUR GAME !!")
+    st.write(" Before we start the game the ruele of the game is must be followed ")
     st.write("Guess a number between 1 to 100")
     st.write("If the game fails restart the game and play again!!")
-    if st.checkbox(" I AGREE"):
+    if st.button("START!!"):
         game()
 rule()
 
