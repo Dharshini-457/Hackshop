@@ -17,6 +17,7 @@ def port():
         st.image(image,caption="Dharshini")
         
         image1=Image.open("file:///C:/Users/dhars/Downloads/icon3.webp")
+        
         image2=Image.open("file:///C:/Users/dhars/Downloads/icon1.webp")
         image3=Image.open("file:///C:/Users/dhars/Downloads/logo.jpg")
         image_url = [image1,image2,image3]
