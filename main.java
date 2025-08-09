@@ -1,4 +1,4 @@
-import java.util.Scanner;
+//import java.util.Scanner;
 /*class main{
     public static void main(String[] args){
         Scanner input=new Scanner(System.in);
@@ -14,15 +14,23 @@ import java.util.Scanner;
         System.out.println("\nSum of digits: "+sum);
     }
 }*/
-import java.applet.Applet;
-import java.awt.Graphics;
+import javax.swing.*;
+import java.awt.*;
 
-// HelloWorld class extends Applet
-public class main extends Applet {
-    
-    // Overriding paint() method
-    @Override public void paint(Graphics g)
-    {
-        g.drawString("Hello World", 20, 20);
+public class main extends JFrame {
+    public main() {
+        setTitle("Hello Applet Replacement");
+        setSize(300, 200);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    }
+    public void paint(Graphics g) {
+        super.paint(g);
+        g.drawString("Hello Application!", 50, 100);
+    }
+
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(() -> {
+            new main().setVisible(true);
+        });
     }
 }
